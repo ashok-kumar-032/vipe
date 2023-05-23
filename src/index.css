@@ -1,13 +1,226 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../src/assets/font/Gilroy-Bold.ttf);
+  src: url(../src/assets/font/Gilroy-Heavy.ttf);
+  src: url(../src/assets/font/Gilroy-Light.ttf);
+  src: url(../src/assets/font/Gilroy-Medium.ttf);
+  src: url(../src/assets/font/Gilroy-Regular.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Konexy Personal Use';
+  src: url(../src/assets/font/KonexyPersonalUse.otf);
+}
+
+:root {
+  --fs-5xl:31px;
+  --fs-4xl: 28px;
+  --fs-3xl: 27px;
+  --fs-2xl: 36px;
+  --fs-xl: 27px;
+  --fs-lg: 23px;
+  --fs-md: 18px;
+  --fs-sm: 16px;
+  --fs-xsm: 14px;
+
+
+  --color-clr_blue: #6022EA !important;
+  --color-clr_white: #FFFFFF !important;
+  --color-clr_light_white: #F6F6F6 !important;
+  --color-clr_light_black: #313131 !important;
+  --color-bg_black: #000000 !important;
+  --color-clr_grey: #4D4D4D !important;
+  --color-clr_light_grey: #868687 !important;
+  --color-bg_light_black: #0D0D0D !important;
+  --color-bg_blue: #6022EA !important;
+  --color-bg_white: #FEFEFE !important;
+  --color-bg_light_w: #F6F6F6 !important;
+  --color-bg_section_1: #FFFAF5;
+  --color-clr_nav: #5E6085;
+  --color-clr_blog: #B2B2C4;
+
+  
+}
+
+.clr_blue {
+  color: var(--color-clr_blue) !important;
+}
+
+.clr_white {
+  color: var(--color-clr_white) !important;
+}
+
+.bg_light_black {
+  background-color: var(--color-bg_light_black) !important;
+}
+
+.clr_light_white {
+  color: var(--color-clr_light_white) !important;
+}
+
+.clr_light_black {
+  color: var(--color-clr_light_black) !important;
+}
+
+.clr_light_grey {
+  color: var(--color-clr_light_grey) !important;
+}
+
+.clr_grey {
+  color: var(--color-clr_grey) !important;
+}
+
+.bg_black {
+  background-color: var(--color-bg_black) !important;
+}
+
+.bg_blue {
+  background-color: var(--color-bg_blue);
+}
+
+.bg_white {
+  background-color: var(--color-bg_white);
+}
+
+.bg_light_w {
+  background-color: var(--color-bg_light_w);
+}
+
+.bg_section_1 {
+  background-color: var(--color-bg_section_1);
+}
+
+.clr_nav {
+  color: var(--color-clr_nav) !important;
+}
+
+.clr_blog {
+  color: var(--color-clr_blog) !important;
+}
+
+/* font_size */
+.fs_5xl {
+  font-size: var(--fs-5xl);
+}
+
+.fs_4xl {
+  font-size: var(--fs-4xl);
+}
+
+.fs_3xl {
+  font-size: var(--fs-3xl);
+}
+
+.fs_2xl {
+  font-size: var(--fs-2xl);
+}
+
+.fs_xl {
+  font-size: var(--fs-xl);
+}
+
+.fs_lg {
+  font-size: var(--fs-lg);
+}
+
+.fs_md {
+  font-size: var(--fs-md);
+}
+
+.fs_sm {
+  font-size: var(--fs-sm);
+}
+
+.fs_xsm {
+  font-size: var(--fs-xsm);
+}
+
+
+/* font-weight */
+.fw_400 {
+  font-weight: 400;
+}
+
+.fw_500 {
+  font-weight: 500;
+}
+
+.fw_600 {
+  font-weight: 600 !important;
+}
+
+.fw_700 {
+  font-weight: 700;
+}
+
+/* font-family*/
+.ff_Gilroy {
+  font-family: 'Gilroy';
+}
+
+.ff_Use {
+  font-family: 'Konexy Personal Use';
+}
+
+.ff_Inter {
+  font-family: 'Inter';
+}
+
+@media (min-width:768px) {
+
+  :root {
+    --fs-5xl: 50px;
+    --fs-4xl: 46px;
+    --fs-3xl: 40px;
+    --fs-2xl: 36px;
+    --fs-xl: 35px;
+    --fs-lg: 24px;
+    --fs-md: 18px;
+    --fs-sm: 16px;
+    --fs-xsm: 14px;
+  }
+}
+
+@media (min-width:992px) {
+
+  :root {
+    --fs-5xl: 72px;
+    --fs-4xl: 38px;
+    --fs-3xl: 40px;
+    --fs-2xl: 36px;
+    --fs-xl: 35px;
+    --fs-lg: 24px;
+    --fs-md: 18px;
+    --fs-sm: 16px;
+    --fs-xsm: 14px;
+  }
+}
+
+@media (min-width:1330px) {
+  :root {
+    --fs-5xl: 72px;
+    --fs-4xl: 46px;
+    --fs-3xl: 40px;
+    --fs-2xl: 36px;
+    --fs-xl: 35px;
+    --fs-lg: 24px;
+    --fs-md: 18px;
+    --fs-sm: 16px;
+    --fs-xsm: 14px;
+  }
+}
+@media (min-width:1400px) {
+  :root {
+    --fs-5xl: 72px;
+    --fs-4xl: 48px;
+    --fs-3xl: 40px;
+    --fs-2xl: 36px;
+    --fs-xl: 35px;
+    --fs-lg: 24px;
+    --fs-md: 18px;
+    --fs-sm: 16px;
+    --fs-xsm: 14px;
+  }
 }
